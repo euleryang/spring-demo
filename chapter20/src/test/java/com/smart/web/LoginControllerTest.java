@@ -74,14 +74,14 @@ public class LoginControllerTest extends UnitilsTestNG {
 
 
 		assertNotNull(mav);
-		assertEquals(mav.getViewName(), "main");
+		assertEquals(mav.getViewName(), "login");
 		assertNotNull(user);
 		assertThat(user.getUserName(), equalTo("tom"));// ⑧ 验证返回结果
-		
+
 
 		assertThat(user.getCredit(), greaterThan(5));
 	}
-	
+
 
 
 }
